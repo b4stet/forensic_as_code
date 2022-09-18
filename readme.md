@@ -9,11 +9,11 @@
 ## Why
 These notebooks are a set of write-ups mining data with Pandas to solve a forensic analysis.
 There are plenty of software around to do it (Autopsy, TimeSketch, X-Ways Forensics, Excel sheets, ELK, ...), so why bother with something different ? 
-In my journey as a forensic analyst, I observed some facts:
-- We often need to collaborate and split the work between coworkers, and it's difficult to converge to common phrasing or similar details level of notes, hence difficult to continue the work of someone else
-- Even if we manage to centralize our notes, it's difficult to interrupt our analysis, copy our notes, check the others, pursue our analysis
+In my journey as a forensic analyst, I came to some observations:
+- We often need to collaborate and split the work between coworkers, and it's difficult to converge to similar details level of notes, hence difficult to continue the work of someone else
+- Even if we manage to centralize our notes, we often interrupt our analysis to copy our notes, check the others, then pursue our analysis
 - Analysis is often dispatched in multiple storages (analysing the data in one, building the timeline in another, keeping notes of everybody in yet another one, ...)  
-- Any software with a graphical interface have limitations, especially regarding filtering and adding some information on the go
+- Software with a graphical interface have limitations, especially regarding filtering and adding some information on the go
 - It's difficult to keep a global overview, to visualize a case and keep track of the grey areas while we progress
 - Building a consistent and comprehensive timeline is difficult
 
@@ -31,7 +31,7 @@ I choose to use Pandas and Jupyter Notebooks:
 - We don't need to stop analyzing to write some notes for peers: anyone can browse the notebooks on the go and adjust where to put the efforts on.
 - The analysis can be reproduced: just load the kernel, and execute cells
 - We can also add new columns to ease the filtering or to save important events as we progress
-- We can create visualization directly from the data
+- We can create visualizations directly from the data
 - We can test and get instant feedback of our result, to only keep what is relevant for the case
 - We can have text cells to attach a note about a finding: notes, data and results are centralized
 
