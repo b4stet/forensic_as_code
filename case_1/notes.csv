@@ -1,0 +1,47 @@
+category,description
+start,2016-08-16 13:02:56+00:00 (downloads Xtreme RAT from blog.mysportclub.ex)
+start,the page 1ff1a5eb5ffe455641a17704db7e0a55.html on blog.mysportclub.ex led to the creation of exp.vbs
+start,1ff1a5eb5ffe455641a17704db7e0a55.html was visited by following a link
+start,before this visit: the user visited blog.mycompany.ex by typing it
+start,"after the download of Xtreme RAT, visited on an unusual port: http://36.98.102.89:12345/1234567890.functions"
+start,"exp.vbs created using wscript.exe, then executed with cscript.exe"
+start,Browsing on blob.mycompany.ex starts on August 16th 13h02m46s
+vector,malicious download from blog.mysportclub.ex
+vector,"from blog.mycompany.ex, redirected to blog.mysportclub.ex which exploit a Flash vulnerability"
+vector,exploit creates exp.vbs using cscript.exe and execute it with wscript.exe
+vector,firefox version: 33.0.3 (C:/Program Files/Mozilla Firefox/install.log)
+vector,Flash version: 18.0.0.194 (C:Windows/System32/Macromed/Flash/FlashInstall.log)
+vector,Xtreme RAT configuration file: GhCtxq8t.cfg
+privesc,"Peter, S-1-5-21-1623514716-2111984414-578690546-1001, is local admin"
+persistence,XTreme RAT
+persistence,update.exe is also Xtreme RAT (same md5 as svchost.exe)
+persistence,"Run/RunOnce keys for Xtreme RAT at system start and user login (HKLM, HKCU)"
+post_compromise,"svchost.exe = Xtreme RAT, md5 7e9f416689d0a361252b38b6fe132f39"
+post_compromise,exp.vbs downloads Xtreme RAT (svchost.exe) and executes it
+post_compromise,exp.vbs downloads from http://blog.mysportclub.ex/wp-content/uploads/hk/5128f35c9b4be13788ba41bdb6d1fc1f/3568226350.exe
+post_compromise,"54948tp.exe matches Mimikatz signatures, md5 f55f3e0359785e3c4511a7a2222ea6f8"
+post_compromise,54948tp.exe performs DNS requests to blog.mysportclub.ex
+post_compromise,"discovery results: mimikatz, browser password dump, nmap, system info"
+post_compromise,subject IP: 192.168.5.100 (192.168.5.1/24)
+post_compromise,host scanned: 192.168.5.15
+post_compromise,DNS server: 192.168.5.10
+post_compromise,"toolbox discovery: nircmd, nmap, winpcap-nmap"
+post_compromise,"toolbox credentials: thc, pwdump7, mimikatz, wdigest reg key, weak pwd dictionnary, bpd"
+post_compromise,"toolbox lateral movement: plink, pscp"
+post_compromise,"rar.exe: WinRAR utility packed with UPX, md5 b97727a338b9aaa980e0fc4baec1f92b"
+post_compromise,rarreg.key: contain string xtremerat
+lateral_movement,"execution with network connections of plink, pscp and hydra"
+lateral_movement,plink/pscp used to connect to 192.168.5.10 the DNS server (Putty HKCU key)
+c2,"54948tp.exe executed, connection to blog.mysportclub.ex"
+c2,Xtreme RAT executed
+c2,Xtreme RAT C2 is 36.98.102.89 (config file)
+c2,Xtreme RAT sends requests http://36.98.102.89:12345/1234567890.functions
+data,"company data created on July 26th, archive on August 11th"
+data,company data created in Peter/Desktop/Documents/
+data,"company data: numbers.txt, customers.txt, company_documents.zip"
+data,"graphical access to company data (shell_items, msie_webcache)"
+data,files edited with notepad (prefetchs)
+data,account peterwilkins@consultant.com on www.mail.com is compromised (bdp logs)
+data,account peterwilkins@consultant.com on www.imdb.com is compromised (bdp logs)
+data,peter local account is compromised (mimikatz log)
+data,"Xtreme RAT: 1.1GB sent to attacker, 35.5MB received"
