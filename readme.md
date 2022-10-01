@@ -8,12 +8,12 @@
 
 ## Why
 These notebooks are a set of write-ups mining data with Pandas to solve a forensic analysis.
-There are plenty of software around to do it (Autopsy, TimeSketch, X-Ways Forensics, Excel sheets, ELK, ...), so why bother with something different ? 
+There are plenty of software around to do it (Autopsy, TimeSketch, X-Ways Forensics, Excel sheets, ELK, Splunk, ...), so why bother with something different ? 
 In my journey as a forensic analyst, I came to some observations:
-- We often need to collaborate and split the work between coworkers, and it's difficult to converge to similar details level of notes, hence difficult to continue the work of someone else
+- We often need to collaborate and split the work between coworkers, and it's difficult to converge to similar details level of notes, hence to continue the work of someone else
 - Even if we manage to centralize our notes, we often interrupt our analysis to copy our notes, check the others, then pursue our analysis
-- Analysis is often dispatched in multiple storages (analysing the data in one, building the timeline in another, keeping notes of everybody in yet another one, ...)  
-- Software with a graphical interface have limitations, especially regarding filtering and adding some information on the go
+- Analysis is often dispatched in multiple storages (data in one, timeline in another, notes in yet another one, ...)  
+- Software with a graphical interface have limitations, especially regarding filtering, visualizations and adding some information on the go
 - It's difficult to keep a global overview, to visualize a case and keep track of the grey areas while we progress
 - Building a consistent and comprehensive timeline is difficult
 
@@ -30,9 +30,9 @@ I choose to use Pandas and Jupyter Notebooks:
 - Everyone can write its notebook, so that peers can view the code that led to the finding, maybe identify a mistake, get a new idea to continue the analysis
 - We don't need to stop analyzing to write some notes for peers: anyone can browse the notebooks on the go and adjust where to put the efforts on.
 - The analysis can be reproduced: just load the kernel, and execute cells
-- We can also add new columns to ease the filtering or to save important events as we progress
+- We can also add new columns to ease the filtering, to save important events as we progress, to add a custom comment
 - We can create visualizations directly from the data
-- We can test and get instant feedback of our result, to only keep what is relevant for the case
+- We can test and get instant feedback of our result, and only keep what is relevant for the case
 - We can have text cells to attach a note about a finding: notes, data and results are centralized
 
 The write-ups are more detailed than in a real investigation to explain both Pandas capabilities and the interpretation of artifacts.
@@ -40,7 +40,7 @@ The write-ups are more detailed than in a real investigation to explain both Pan
 ## Notes for disks forensic write-ups
 The write-ups are focused on the analysis and do not deal with data collection and extraction. 
 For a disk analysis, the preliminary work is to:
-- acquire the disk, or install an agent for live artifacts collection
+- acquire the disk, or collect live artifacts from an agent (Velociraptor, GRR, ...)
 - extract and parse the artifacts
 - assemble them in a uniform structure in json
 
