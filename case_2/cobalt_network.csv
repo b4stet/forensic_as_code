@@ -1,0 +1,1132 @@
+datetime,subject,raw,eid,pid,process_name,user,is_src,protocol,src_ip,src_port,src_hostname,dst_ip,dst_port,dst_hostname
+2022-08-05 22:17:31+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.767550300Z""/>
+    <EventRecordID>140413</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1928""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:25.459</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ProcessId"">1604</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.184</Data>
+    <Data Name=""SourceHostname"">ACC-10.corp.net</Data>
+    <Data Name=""SourcePort"">55313</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">135</Data>
+    <Data Name=""DestinationPortName"">epmap</Data>
+  </EventData>
+</Event>
+",3,1604,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.184,55313,ACC-10.corp.net,172.17.11.209,135,ACC-01
+2022-08-05 22:17:31+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.089885600Z""/>
+    <EventRecordID>210336</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:24.642</Data>
+    <Data Name=""ProcessGuid"">{62886613-6433-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">445</Data>
+    <Data Name=""SourcePortName"">microsoft-ds</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.184</Data>
+    <Data Name=""DestinationHostname"">ACC-10</Data>
+    <Data Name=""DestinationPort"">55312</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.209,445,ACC-01.corp.net,172.17.11.184,55312,ACC-10
+2022-08-05 22:17:31+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.089885600Z""/>
+    <EventRecordID>210339</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:24.720</Data>
+    <Data Name=""ProcessGuid"">{62886613-6436-62ED-0000-00108BF30000}</Data>
+    <Data Name=""ProcessId"">692</Data>
+    <Data Name=""Image"">C:\Windows\System32\svchost.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\NETWORK SERVICE</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">135</Data>
+    <Data Name=""SourcePortName"">epmap</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.184</Data>
+    <Data Name=""DestinationHostname"">ACC-10</Data>
+    <Data Name=""DestinationPort"">55313</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,692,C:\Windows\System32\svchost.exe,NT AUTHORITY\NETWORK SERVICE,false,tcp,172.17.11.209,135,ACC-01.corp.net,172.17.11.184,55313,ACC-10
+2022-08-05 22:17:31+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.767550300Z""/>
+    <EventRecordID>140412</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1928""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:25.381</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-6517-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.184</Data>
+    <Data Name=""SourceHostname"">ACC-10.corp.net</Data>
+    <Data Name=""SourcePort"">55312</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">445</Data>
+    <Data Name=""DestinationPortName"">microsoft-ds</Data>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.184,55312,ACC-10.corp.net,172.17.11.209,445,ACC-01
+2022-08-05 22:17:31+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.767550300Z""/>
+    <EventRecordID>140414</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1928""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:25.469</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ProcessId"">1604</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.184</Data>
+    <Data Name=""SourceHostname"">ACC-10.corp.net</Data>
+    <Data Name=""SourcePort"">55314</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">49181</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,1604,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.184,55314,ACC-10.corp.net,172.17.11.209,49181,ACC-01
+2022-08-05 22:17:31+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.089885600Z""/>
+    <EventRecordID>210340</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:24.731</Data>
+    <Data Name=""ProcessGuid"">{62886613-6434-62ED-0000-001048930000}</Data>
+    <Data Name=""ProcessId"">476</Data>
+    <Data Name=""Image"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">49181</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.184</Data>
+    <Data Name=""DestinationHostname"">ACC-10</Data>
+    <Data Name=""DestinationPort"">55314</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,476,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.209,49181,ACC-01.corp.net,172.17.11.184,55314,ACC-10
+2022-08-05 22:22:18+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.171815100Z""/>
+    <EventRecordID>211556</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:09.606</Data>
+    <Data Name=""ProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ProcessId"">1572</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">58605</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">135</Data>
+    <Data Name=""DestinationPortName"">epmap</Data>
+  </EventData>
+</Event>
+",3,1572,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.209,58605,ACC-01.corp.net,172.17.11.190,135,ACC-07
+2022-08-05 22:22:18+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.171815100Z""/>
+    <EventRecordID>211557</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:09.614</Data>
+    <Data Name=""ProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ProcessId"">1572</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">58606</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">49181</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,1572,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.209,58606,ACC-01.corp.net,172.17.11.190,49181,ACC-07
+2022-08-05 22:22:18+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.708217200Z""/>
+    <EventRecordID>175841</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:17.602</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-64C3-62ED-0000-001004940000}</Data>
+    <Data Name=""ProcessId"">464</Data>
+    <Data Name=""Image"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">49181</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">58606</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,464,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.190,49181,ACC-07.corp.net,172.17.11.209,58606,ACC-01
+2022-08-05 22:22:18+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.708217200Z""/>
+    <EventRecordID>175840</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:17.593</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-64C4-62ED-0000-00101EF40000}</Data>
+    <Data Name=""ProcessId"">684</Data>
+    <Data Name=""Image"">C:\Windows\System32\svchost.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\NETWORK SERVICE</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">135</Data>
+    <Data Name=""SourcePortName"">epmap</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">58605</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,684,C:\Windows\System32\svchost.exe,NT AUTHORITY\NETWORK SERVICE,false,tcp,172.17.11.190,135,ACC-07.corp.net,172.17.11.209,58605,ACC-01
+2022-08-05 22:22:18+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.171815100Z""/>
+    <EventRecordID>211555</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1996""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:09.503</Data>
+    <Data Name=""ProcessGuid"">{62886613-6433-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.209</Data>
+    <Data Name=""SourceHostname"">ACC-01.corp.net</Data>
+    <Data Name=""SourcePort"">58604</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">445</Data>
+    <Data Name=""DestinationPortName"">microsoft-ds</Data>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.209,58604,ACC-01.corp.net,172.17.11.190,445,ACC-07
+2022-08-05 22:22:18+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.708217200Z""/>
+    <EventRecordID>175838</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:17.490</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-64C3-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">445</Data>
+    <Data Name=""SourcePortName"">microsoft-ds</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.209</Data>
+    <Data Name=""DestinationHostname"">ACC-01</Data>
+    <Data Name=""DestinationPort"">58604</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.190,445,ACC-07.corp.net,172.17.11.209,58604,ACC-01
+2022-08-05 22:26:28+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:28.191693600Z""/>
+    <EventRecordID>194319</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:25.880</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-647E-62ED-0000-0010F0F40000}</Data>
+    <Data Name=""ProcessId"">704</Data>
+    <Data Name=""Image"">C:\Windows\System32\svchost.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\NETWORK SERVICE</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">135</Data>
+    <Data Name=""SourcePortName"">epmap</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">59177</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,704,C:\Windows\System32\svchost.exe,NT AUTHORITY\NETWORK SERVICE,false,tcp,172.17.11.195,135,ACC-04.corp.net,172.17.11.190,59177,ACC-07
+2022-08-05 22:26:28+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:28.191693600Z""/>
+    <EventRecordID>194320</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:25.892</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-647E-62ED-0000-001032920000}</Data>
+    <Data Name=""ProcessId"">484</Data>
+    <Data Name=""Image"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">49155</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">59178</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,484,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.195,49155,ACC-04.corp.net,172.17.11.190,59178,ACC-07
+2022-08-05 22:26:28+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:28.191693600Z""/>
+    <EventRecordID>194316</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:25.822</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-647D-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">445</Data>
+    <Data Name=""SourcePortName"">microsoft-ds</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.190</Data>
+    <Data Name=""DestinationHostname"">ACC-07</Data>
+    <Data Name=""DestinationPort"">59176</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.195,445,ACC-04.corp.net,172.17.11.190,59176,ACC-07
+2022-08-05 22:26:32+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:32.987488000Z""/>
+    <EventRecordID>176555</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:29.031</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-64C3-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">59176</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">445</Data>
+    <Data Name=""DestinationPortName"">microsoft-ds</Data>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.190,59176,ACC-07.corp.net,172.17.11.195,445,ACC-04
+2022-08-05 22:26:32+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:32.987488000Z""/>
+    <EventRecordID>176557</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:29.101</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ProcessId"">3208</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">59178</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">49155</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,3208,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.190,59178,ACC-07.corp.net,172.17.11.195,49155,ACC-04
+2022-08-05 22:26:32+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:32.987488000Z""/>
+    <EventRecordID>176556</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:29.088</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ProcessId"">3208</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.190</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">59177</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">135</Data>
+    <Data Name=""DestinationPortName"">epmap</Data>
+  </EventData>
+</Event>
+",3,3208,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.190,59177,ACC-07.corp.net,172.17.11.195,135,ACC-04
+2022-08-05 22:31:36+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:36.874470400Z""/>
+    <EventRecordID>177571</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:31.234</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-644A-62ED-0000-00103A940000}</Data>
+    <Data Name=""ProcessId"">500</Data>
+    <Data Name=""Image"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">49183</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">61960</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,500,C:\Windows\System32\services.exe,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.185,49183,ACC-02.corp.net,172.17.11.195,61960,ACC-04
+2022-08-05 22:31:36+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:36.873470500Z""/>
+    <EventRecordID>177565</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:31.067</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-6448-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">445</Data>
+    <Data Name=""SourcePortName"">microsoft-ds</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">61958</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,false,tcp,172.17.11.185,445,ACC-02.corp.net,172.17.11.195,61958,ACC-04
+2022-08-05 22:31:36+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:36.874470400Z""/>
+    <EventRecordID>177570</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:31.229</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-644B-62ED-0000-001029F50000}</Data>
+    <Data Name=""ProcessId"">696</Data>
+    <Data Name=""Image"">C:\Windows\System32\svchost.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\NETWORK SERVICE</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">135</Data>
+    <Data Name=""SourcePortName"">epmap</Data>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.195</Data>
+    <Data Name=""DestinationHostname"">ACC-04</Data>
+    <Data Name=""DestinationPort"">61959</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,696,C:\Windows\System32\svchost.exe,NT AUTHORITY\NETWORK SERVICE,false,tcp,172.17.11.185,135,ACC-02.corp.net,172.17.11.195,61959,ACC-04
+2022-08-05 22:31:39+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:39.343749300Z""/>
+    <EventRecordID>195941</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:35.378</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ProcessId"">4092</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">61960</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.185</Data>
+    <Data Name=""DestinationHostname"">ACC-02</Data>
+    <Data Name=""DestinationPort"">49183</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4092,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.195,61960,ACC-04.corp.net,172.17.11.185,49183,ACC-02
+2022-08-05 22:31:39+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:39.343749300Z""/>
+    <EventRecordID>195940</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:35.373</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ProcessId"">4092</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">61959</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.185</Data>
+    <Data Name=""DestinationHostname"">ACC-02</Data>
+    <Data Name=""DestinationPort"">135</Data>
+    <Data Name=""DestinationPortName"">epmap</Data>
+  </EventData>
+</Event>
+",3,4092,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.195,61959,ACC-04.corp.net,172.17.11.185,135,ACC-02
+2022-08-05 22:31:39+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:39.343749300Z""/>
+    <EventRecordID>195939</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1964""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:35.212</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-647D-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.195</Data>
+    <Data Name=""SourceHostname"">ACC-04.corp.net</Data>
+    <Data Name=""SourcePort"">61958</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.185</Data>
+    <Data Name=""DestinationHostname"">ACC-02</Data>
+    <Data Name=""DestinationPort"">445</Data>
+    <Data Name=""DestinationPortName"">microsoft-ds</Data>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.195,61958,ACC-04.corp.net,172.17.11.185,445,ACC-02
+2022-08-05 22:35:03+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:35:03.268824500Z""/>
+    <EventRecordID>178417</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:34:55.608</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ProcessId"">4776</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">61254</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.171</Data>
+    <Data Name=""DestinationHostname"">ACC-03</Data>
+    <Data Name=""DestinationPort"">49182</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,4776,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.185,61254,ACC-02.corp.net,172.17.11.171,49182,ACC-03
+2022-08-05 22:35:03+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:35:03.268824500Z""/>
+    <EventRecordID>178416</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:34:55.587</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ProcessId"">4776</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">61253</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.171</Data>
+    <Data Name=""DestinationHostname"">ACC-03</Data>
+    <Data Name=""DestinationPort"">135</Data>
+    <Data Name=""DestinationPortName"">epmap</Data>
+  </EventData>
+</Event>
+",3,4776,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.185,61253,ACC-02.corp.net,172.17.11.171,135,ACC-03
+2022-08-05 22:35:03+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:35:03.268824500Z""/>
+    <EventRecordID>178415</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2040""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:34:55.505</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-6448-62ED-0000-0010EB030000}</Data>
+    <Data Name=""ProcessId"">4</Data>
+    <Data Name=""Image"">System</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">172.17.11.185</Data>
+    <Data Name=""SourceHostname"">ACC-02.corp.net</Data>
+    <Data Name=""SourcePort"">61252</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">172.17.11.171</Data>
+    <Data Name=""DestinationHostname"">ACC-03</Data>
+    <Data Name=""DestinationPort"">445</Data>
+    <Data Name=""DestinationPortName"">microsoft-ds</Data>
+  </EventData>
+</Event>
+",3,4,System,NT AUTHORITY\SYSTEM,true,tcp,172.17.11.185,61252,ACC-02.corp.net,172.17.11.171,445,ACC-03
+2022-08-05 22:48:48+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:48:48.478169000Z""/>
+    <EventRecordID>182137</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:48:39.657</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-9E4E-62ED-0000-00103738E801}</Data>
+    <Data Name=""ProcessId"">5148</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">true</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">127.0.0.1</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">60310</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">127.0.0.1</Data>
+    <Data Name=""DestinationHostname"">ACC-07.corp.net</Data>
+    <Data Name=""DestinationPort"">59886</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,5148,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,NT AUTHORITY\SYSTEM,true,tcp,127.0.0.1,60310,ACC-07.corp.net,127.0.0.1,59886,ACC-07.corp.net
+2022-08-05 22:48:48+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>3</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>3</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:48:48.478169000Z""/>
+    <EventRecordID>182138</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1936""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:48:39.657</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ProcessId"">3208</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""Protocol"">tcp</Data>
+    <Data Name=""Initiated"">false</Data>
+    <Data Name=""SourceIsIpv6"">false</Data>
+    <Data Name=""SourceIp"">127.0.0.1</Data>
+    <Data Name=""SourceHostname"">ACC-07.corp.net</Data>
+    <Data Name=""SourcePort"">59886</Data>
+    <Data Name=""SourcePortName""/>
+    <Data Name=""DestinationIsIpv6"">false</Data>
+    <Data Name=""DestinationIp"">127.0.0.1</Data>
+    <Data Name=""DestinationHostname"">ACC-07.corp.net</Data>
+    <Data Name=""DestinationPort"">60310</Data>
+    <Data Name=""DestinationPortName""/>
+  </EventData>
+</Event>
+",3,3208,C:\Windows\SysWOW64\rundll32.exe,NT AUTHORITY\SYSTEM,false,tcp,127.0.0.1,59886,ACC-07.corp.net,127.0.0.1,60310,ACC-07.corp.net

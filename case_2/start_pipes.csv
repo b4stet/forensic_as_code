@@ -1,0 +1,244 @@
+datetime,subject,raw,eid,pid,process_name,pipe_name
+2022-08-05 21:42:36+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:36.738949400Z""/>
+    <EventRecordID>131684</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:36.738</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8ECC-62ED-0000-001077C97C01}</Data>
+    <Data Name=""ProcessId"">6728</Data>
+    <Data Name=""PipeName"">\jpi2_pid3904_pipe3</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Java\jre7\bin\java.exe</Data>
+  </EventData>
+</Event>
+",18,6728,C:\Program Files (x86)\Java\jre7\bin\java.exe,\jpi2_pid3904_pipe3
+2022-08-05 21:42:36+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:36.738949400Z""/>
+    <EventRecordID>131685</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:36.738</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8ECC-62ED-0000-001077C97C01}</Data>
+    <Data Name=""ProcessId"">6728</Data>
+    <Data Name=""PipeName"">\jpi2_pid3904_pipe2</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Java\jre7\bin\java.exe</Data>
+  </EventData>
+</Event>
+",18,6728,C:\Program Files (x86)\Java\jre7\bin\java.exe,\jpi2_pid3904_pipe2
+2022-08-05 21:49:19+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>17</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>17</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:49:19.337107300Z""/>
+    <EventRecordID>133716</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:49:19.337</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-905F-62ED-0000-001055B48C01}</Data>
+    <Data Name=""ProcessId"">2884</Data>
+    <Data Name=""PipeName"">\postex_d2eb</Data>
+    <Data Name=""Image"">C:\Windows\syswow64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",17,2884,C:\Windows\syswow64\rundll32.exe,\postex_d2eb
+2022-08-05 21:49:19+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:49:19.829378100Z""/>
+    <EventRecordID>133721</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:49:19.781</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ProcessId"">364</Data>
+    <Data Name=""PipeName"">\postex_d2eb</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",18,364,C:\Windows\SysWOW64\rundll32.exe,\postex_d2eb
+2022-08-05 21:51:43+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>17</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>17</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:51:43.166194800Z""/>
+    <EventRecordID>134151</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:51:43.166</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-90EF-62ED-0000-0010F1439001}</Data>
+    <Data Name=""ProcessId"">5160</Data>
+    <Data Name=""PipeName"">\postex_50e7</Data>
+    <Data Name=""Image"">C:\Windows\syswow64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",17,5160,C:\Windows\syswow64\rundll32.exe,\postex_50e7
+2022-08-05 21:51:43+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:51:43.634601900Z""/>
+    <EventRecordID>134152</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:51:43.634</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ProcessId"">364</Data>
+    <Data Name=""PipeName"">\postex_50e7</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",18,364,C:\Windows\SysWOW64\rundll32.exe,\postex_50e7
+2022-08-05 21:54:28+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>17</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>17</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:54:28.680588600Z""/>
+    <EventRecordID>134624</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:54:28.680</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9194-62ED-0000-001071F59201}</Data>
+    <Data Name=""ProcessId"">5232</Data>
+    <Data Name=""PipeName"">\ipc_14</Data>
+    <Data Name=""Image"">C:\Windows\syswow64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",17,5232,C:\Windows\syswow64\rundll32.exe,\ipc_14
+2022-08-05 21:54:29+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:54:29.655370000Z""/>
+    <EventRecordID>134626</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:54:29.655</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ProcessId"">364</Data>
+    <Data Name=""PipeName"">\ipc_14</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",18,364,C:\Windows\SysWOW64\rundll32.exe,\ipc_14
+2022-08-05 22:00:08+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>18</EventID>
+    <Version>1</Version>
+    <Level>4</Level>
+    <Task>18</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:00:08.110517800Z""/>
+    <EventRecordID>136121</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:00:08.110</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9194-62ED-0000-001071F59201}</Data>
+    <Data Name=""ProcessId"">5232</Data>
+    <Data Name=""PipeName"">\ipc_14</Data>
+    <Data Name=""Image"">C:\Windows\syswow64\rundll32.exe</Data>
+  </EventData>
+</Event>
+",18,5232,C:\Windows\syswow64\rundll32.exe,\ipc_14

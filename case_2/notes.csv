@@ -1,0 +1,26 @@
+category,description
+start,user CORP\Joann Sims follow a link in an email: blog.coinmarketcap.com
+vector,jp2launcher: Java applet executed from IE (iexplore.exe)
+vector,jp2launcher execute java.exe with argument deploy.jar
+vector,executing deploy.jar spawns a CS beacon through rundll32.exe (PID 364)
+vector,blog.coinmarketcap.com: 192.0.78.195
+patient0,ACC-10 (first cobalt installation and execution at 22h00 + 127.0.0.1)
+persistence,"Cobalt loader installed as a service (27f96ba.exe,b8a3848.exe,4e6964b.exe,b9b362b.exe,42f7d05.exe)"
+persistence,Cobalt loaders <rnd>.exe: same IMPHASH=DE77F3139EAF74F1B255AB7BE0B6605F
+persistence,other CS loader installed as a service: JavaUpdater.exe
+c2,c-73-245-147-162.hsd1.fl.comcast.net: 73.245.147.162
+c2,5-131.gtt-net.cz: 82.144.131.5
+c2,"C2s reached from ACC-10, PID 364"
+lateral_movement,chain: ACC-10 > ACC-01 > ACC-07 > ACC-04 > ACC-02 > ACC-03
+lateral_movement,method: DCOM-based (TCP135 + TCP ephemeral)
+lateral_movement,PID3208 sacrificial process on ACC-07 serves the ransomware on port 59886
+other,CS sacrificial process: rundll32.exe (64 and 32 bits)
+other,other CS Loader JavaUpdater: IMPHASH=BED5688A4A2B5EA6984115B458755E90
+other,download from 127.0.0.1:59886 then executes Get-Y3J5cHRy
+other,"Search for filenames containing ""swift"""
+other,Test if C:\ACH exists
+other,powershell Get-Y3J5cHRy: ransomware (random AES256 key generated)
+other,"ransomware output: .HERMES extension, ransom note=DECRYPT_INFORMATION.txt"
+other,"ransomware identifiers: bitcoin addr 13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94, email wangchung01@gmail.com"
+other,LSASS dumped using CS on all subjects
+other,\ipc_14 named pipe used for inter-beacon communication

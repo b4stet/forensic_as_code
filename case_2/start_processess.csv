@@ -1,0 +1,337 @@
+datetime,subject,raw,pid,ppid,process_name,parent_process_name,cmdline,user,report_desc,mitre_tactic
+2022-08-05 21:21:26+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:21:26.354641900Z""/>
+    <EventRecordID>126068</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:21:26.235</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-89D6-62ED-0000-0010A0405401}</Data>
+    <Data Name=""ProcessId"">2132</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Microsoft Office\Office14\OUTLOOK.EXE</Data>
+    <Data Name=""FileVersion"">14.0.4760.1000</Data>
+    <Data Name=""Description"">Microsoft Outlook</Data>
+    <Data Name=""Product"">Microsoft Outlook</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">""C:\PROGRA~2\MICROS~1\Office14\OUTLOOK.EXE"" </Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=CA6DB5CB169E09209D0BA380E398D87B,IMPHASH=FACBA47D6D8DA364EE7458453D5BC867</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-6530-62ED-0000-0010BA070500}</Data>
+    <Data Name=""ParentProcessId"">2016</Data>
+    <Data Name=""ParentImage"">C:\Windows\explorer.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\Explorer.EXE</Data>
+  </EventData>
+</Event>
+",2132,2016,C:\Program Files (x86)\Microsoft Office\Office14\OUTLOOK.EXE,explorer.exe,"""C:\PROGRA~2\MICROS~1\Office14\OUTLOOK.EXE"" ",CORP\Joann.Sims,User starts Outlook,Initial Access
+2022-08-05 21:42:22+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:22.513624700Z""/>
+    <EventRecordID>131599</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:22.513</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8EBE-62ED-0000-001053547C01}</Data>
+    <Data Name=""ProcessId"">5440</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Internet Explorer\iexplore.exe</Data>
+    <Data Name=""FileVersion"">8.00.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Internet Explorer</Data>
+    <Data Name=""Product"">Windows® Internet Explorer</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">""C:\Program Files (x86)\Internet Explorer\iexplore.exe"" http://blog.coinmarketcap.com/</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Documents\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=C613E69C3B191BB02C7A191741A1D024,IMPHASH=21CE449BAC952D12788282110FBDE738</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-89D6-62ED-0000-0010A0405401}</Data>
+    <Data Name=""ParentProcessId"">2132</Data>
+    <Data Name=""ParentImage"">C:\Program Files (x86)\Microsoft Office\Office14\OUTLOOK.EXE</Data>
+    <Data Name=""ParentCommandLine"">""C:\PROGRA~2\MICROS~1\Office14\OUTLOOK.EXE"" </Data>
+  </EventData>
+</Event>
+",5440,2132,C:\Program Files (x86)\Internet Explorer\iexplore.exe,OUTLOOK.EXE,"""C:\Program Files (x86)\Internet Explorer\iexplore.exe"" http://blog.coinmarketcap.com/",CORP\Joann.Sims,User follows a link to blog.coinmarketcap.com,Initial Access
+2022-08-05 21:42:36+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:36.600738100Z""/>
+    <EventRecordID>131683</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:36.600</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8ECC-62ED-0000-001077C97C01}</Data>
+    <Data Name=""ProcessId"">6728</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Java\jre7\bin\java.exe</Data>
+    <Data Name=""FileVersion"">7.0.210.11</Data>
+    <Data Name=""Description"">Java(TM) Platform SE binary</Data>
+    <Data Name=""Product"">Java(TM) Platform SE 7 U21</Data>
+    <Data Name=""Company"">Oracle Corporation</Data>
+    <Data Name=""CommandLine"">""C:\Program Files (x86)\Java\jre7\bin\java.exe"" -Xbootclasspath/a:""C:\Program Files (x86)\Java\jre7\lib\deploy.jar"";""C:\Program Files (x86)\Java\jre7\lib\javaws.jar"";""C:\Program Files (x86)\Java\jre7\lib\plugin.jar"" -Djava.class.path=""C:\Program Files (x86)\Java\jre7\classes"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=091C84FE9C2A2C4AE1F30AC7C6A4BDD1,IMPHASH=3C9847EA7BF446108D8B6BF308C41C52</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8ECC-62ED-0000-001076C77C01}</Data>
+    <Data Name=""ParentProcessId"">2572</Data>
+    <Data Name=""ParentImage"">C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe</Data>
+    <Data Name=""ParentCommandLine"">""C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2</Data>
+  </EventData>
+</Event>
+",6728,2572,C:\Program Files (x86)\Java\jre7\bin\java.exe,jp2launcher.exe,"""C:\Program Files (x86)\Java\jre7\bin\java.exe"" -Xbootclasspath/a:""C:\Program Files (x86)\Java\jre7\lib\deploy.jar"";""C:\Program Files (x86)\Java\jre7\lib\javaws.jar"";""C:\Program Files (x86)\Java\jre7\lib\plugin.jar"" -Djava.class.path=""C:\Program Files (x86)\Java\jre7\classes"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2",CORP\Joann.Sims,Java applet executed from IE (deploy.jar),Initial Access
+2022-08-05 21:42:36+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:36.600738100Z""/>
+    <EventRecordID>131682</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:36.553</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8ECC-62ED-0000-001076C77C01}</Data>
+    <Data Name=""ProcessId"">2572</Data>
+    <Data Name=""Image"">C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe</Data>
+    <Data Name=""FileVersion"">10.21.2.11</Data>
+    <Data Name=""Description"">Java(TM) Platform SE binary</Data>
+    <Data Name=""Product"">Java(TM) Platform SE 7 U21</Data>
+    <Data Name=""Company"">Oracle Corporation</Data>
+    <Data Name=""CommandLine"">""C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=ACDB79D0321C33C0D0B46409E6226043,IMPHASH=07644477E1D1A4C38418E1026DB9874E</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8EBE-62ED-0000-001053547C01}</Data>
+    <Data Name=""ParentProcessId"">5440</Data>
+    <Data Name=""ParentImage"">C:\Program Files (x86)\Internet Explorer\iexplore.exe</Data>
+    <Data Name=""ParentCommandLine"">""C:\Program Files (x86)\Internet Explorer\iexplore.exe"" http://blog.coinmarketcap.com/</Data>
+  </EventData>
+</Event>
+",2572,5440,C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe,iexplore.exe,"""C:\Program Files (x86)\Java\jre7\bin\jp2launcher.exe"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2",CORP\Joann.Sims,Java applet executed from IE (deploy.jar),Initial Access
+2022-08-05 21:42:55+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:42:55.817236600Z""/>
+    <EventRecordID>131747</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:42:55.808</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ProcessId"">364</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\System32\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8ECC-62ED-0000-001077C97C01}</Data>
+    <Data Name=""ParentProcessId"">6728</Data>
+    <Data Name=""ParentImage"">C:\Program Files (x86)\Java\jre7\bin\java.exe</Data>
+    <Data Name=""ParentCommandLine"">""C:\Program Files (x86)\Java\jre7\bin\java.exe"" -Xbootclasspath/a:""C:\Program Files (x86)\Java\jre7\lib\deploy.jar"";""C:\Program Files (x86)\Java\jre7\lib\javaws.jar"";""C:\Program Files (x86)\Java\jre7\lib\plugin.jar"" -Djava.class.path=""C:\Program Files (x86)\Java\jre7\classes"" -D__jvm_launched=10683195851 -D__applet_launched=10683172242 -Dsun.awt.warmup=true sun.plugin2.main.client.PluginMain write_pipe_name=jpi2_pid3904_pipe3,read_pipe_name=jpi2_pid3904_pipe2</Data>
+  </EventData>
+</Event>
+",364,6728,C:\Windows\SysWOW64\rundll32.exe,C:\Program Files (x86)\Java\jre7\bin\java.exe,C:\Windows\System32\rundll32.exe,CORP\Joann.Sims,Cobalt Strike beacon spawned,Command and Control
+2022-08-05 21:49:19+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:49:19.149960100Z""/>
+    <EventRecordID>133715</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:49:19.149</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-905F-62ED-0000-001055B48C01}</Data>
+    <Data Name=""ProcessId"">2884</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\syswow64\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ParentProcessId"">364</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",2884,364,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\syswow64\rundll32.exe,CORP\Joann.Sims,"Sacrificial process spawned, unidentified purpose",Execution
+2022-08-05 21:51:43+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:51:43.025853300Z""/>
+    <EventRecordID>134147</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:51:43.010</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-90EF-62ED-0000-0010F1439001}</Data>
+    <Data Name=""ProcessId"">5160</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\syswow64\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-6527-62ED-0000-0020EDCB0100}</Data>
+    <Data Name=""LogonId"">0x000000000001cbed</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">Medium</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ParentProcessId"">364</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",5160,364,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\syswow64\rundll32.exe,CORP\Joann.Sims,"Scan subnet (12 hosts, TCP 135,139,3389,445)",Discovery
+2022-08-05 21:54:28+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T21:54:28.540248900Z""/>
+    <EventRecordID>134623</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 21:54:28.524</Data>
+    <Data Name=""ProcessGuid"">{140A6FA9-9194-62ED-0000-001071F59201}</Data>
+    <Data Name=""ProcessId"">5232</Data>
+    <Data Name=""Image"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""FileVersion"">6.1.7600.16385 (win7_rtm.090713-1255)</Data>
+    <Data Name=""Description"">Windows host process (Rundll32)</Data>
+    <Data Name=""Product"">Microsoft® Windows® Operating System</Data>
+    <Data Name=""Company"">Microsoft Corporation</Data>
+    <Data Name=""CommandLine"">C:\Windows\syswow64\rundll32.exe</Data>
+    <Data Name=""CurrentDirectory"">C:\Users\Joann.Sims\Desktop\</Data>
+    <Data Name=""User"">CORP\Joann.Sims</Data>
+    <Data Name=""LogonGuid"">{140A6FA9-9194-62ED-0000-00201CF59201}</Data>
+    <Data Name=""LogonId"">0x000000000192f51c</Data>
+    <Data Name=""TerminalSessionId"">1</Data>
+    <Data Name=""IntegrityLevel"">High</Data>
+    <Data Name=""Hashes"">MD5=51138BEEA3E2C21EC44D0932C71762A8,IMPHASH=EF8A44FE2F9AD4AB85E55004AAA024A9</Data>
+    <Data Name=""ParentProcessGuid"">{140A6FA9-8EDF-62ED-0000-0010D81B7D01}</Data>
+    <Data Name=""ParentProcessId"">364</Data>
+    <Data Name=""ParentImage"">C:\Windows\SysWOW64\rundll32.exe</Data>
+    <Data Name=""ParentCommandLine"">C:\Windows\System32\rundll32.exe</Data>
+  </EventData>
+</Event>
+",5232,364,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\SysWOW64\rundll32.exe,C:\Windows\syswow64\rundll32.exe,CORP\Joann.Sims,Initiate \ipc_14 named pipe for inter-beacon communication,Lateral Movement

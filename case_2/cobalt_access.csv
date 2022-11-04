@@ -1,0 +1,225 @@
+datetime,subject,raw,eid,pid,process_name,process_target
+2022-08-05 22:01:56+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:01:56.767671400Z""/>
+    <EventRecordID>136748</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:01:56.767</Data>
+    <Data Name=""SourceProcessGUID"">{140A6FA9-9354-62ED-0000-0010139DA301}</Data>
+    <Data Name=""SourceProcessId"">7012</Data>
+    <Data Name=""SourceThreadId"">5796</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{140A6FA9-6517-62ED-0000-0010A2970000}</Data>
+    <Data Name=""TargetProcessId"">524</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(00000000001ED97C)</Data>
+  </EventData>
+</Event>
+",10,7012,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:05:58+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:05:58.007238000Z""/>
+    <EventRecordID>137713</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:05:58.007</Data>
+    <Data Name=""SourceProcessGUID"">{140A6FA9-9445-62ED-0000-00104856AB01}</Data>
+    <Data Name=""SourceProcessId"">2812</Data>
+    <Data Name=""SourceThreadId"">4196</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{140A6FA9-6517-62ED-0000-0010A2970000}</Data>
+    <Data Name=""TargetProcessId"">524</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x001fffff</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(0000000000191D3D)</Data>
+  </EventData>
+</Event>
+",10,2812,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:16:30+00:00,ACC-10,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:16:30.453749600Z""/>
+    <EventRecordID>140159</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1428"" ThreadID=""1916""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-10.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:16:30.453</Data>
+    <Data Name=""SourceProcessGUID"">{140A6FA9-96BD-62ED-0000-0010C5E8C401}</Data>
+    <Data Name=""SourceProcessId"">596</Data>
+    <Data Name=""SourceThreadId"">4568</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{140A6FA9-6517-62ED-0000-0010A2970000}</Data>
+    <Data Name=""TargetProcessId"">524</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(000000000025D97C)</Data>
+  </EventData>
+</Event>
+",10,596,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:19:38+00:00,ACC-01,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:19:38.478878100Z""/>
+    <EventRecordID>210976</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1992""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-01.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:19:38.463</Data>
+    <Data Name=""SourceProcessGUID"">{62886613-9779-62ED-0000-00106846CE01}</Data>
+    <Data Name=""SourceProcessId"">5884</Data>
+    <Data Name=""SourceThreadId"">1332</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{62886613-6435-62ED-0000-00108C960000}</Data>
+    <Data Name=""TargetProcessId"">492</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(00000000001DD97C)</Data>
+  </EventData>
+</Event>
+",10,5884,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:23:45+00:00,ACC-07,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:23:45.954076400Z""/>
+    <EventRecordID>176019</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1444"" ThreadID=""1932""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-07.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:23:45.906</Data>
+    <Data Name=""SourceProcessGUID"">{7A60D74F-9871-62ED-0000-00103FD1B001}</Data>
+    <Data Name=""SourceProcessId"">3460</Data>
+    <Data Name=""SourceThreadId"">3568</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{7A60D74F-64C3-62ED-0000-001002970000}</Data>
+    <Data Name=""TargetProcessId"">476</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(000000000018D97C)</Data>
+  </EventData>
+</Event>
+",10,3460,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:28:03+00:00,ACC-04,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:28:03.077367400Z""/>
+    <EventRecordID>194646</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1440"" ThreadID=""1960""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-04.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:28:03.077</Data>
+    <Data Name=""SourceProcessGUID"">{0EBA84BE-9972-62ED-0000-001017C1F201}</Data>
+    <Data Name=""SourceProcessId"">4300</Data>
+    <Data Name=""SourceThreadId"">6040</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{0EBA84BE-647E-62ED-0000-00101E970000}</Data>
+    <Data Name=""TargetProcessId"">512</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(000000000040D97C)</Data>
+  </EventData>
+</Event>
+",10,4300,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
+2022-08-05 22:32:35+00:00,ACC-02,"<Event xmlns=""http://schemas.microsoft.com/win/2004/08/events/event"">
+  <System>
+    <Provider Name=""Microsoft-Windows-Sysmon"" Guid=""{5770385F-C22A-43E0-BF4C-06F5698FFBD9}""/>
+    <EventID>10</EventID>
+    <Version>3</Version>
+    <Level>4</Level>
+    <Task>10</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime=""2022-08-05T22:32:35.535790500Z""/>
+    <EventRecordID>178031</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID=""1472"" ThreadID=""2036""/>
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>ACC-02.corp.net</Computer>
+    <Security UserID=""S-1-5-18""/>
+  </System>
+  <EventData>
+    <Data Name=""RuleName""/>
+    <Data Name=""UtcTime"">2022-08-05 22:32:35.535</Data>
+    <Data Name=""SourceProcessGUID"">{BEDB1A18-9A82-62ED-0000-00108FA6EB01}</Data>
+    <Data Name=""SourceProcessId"">2004</Data>
+    <Data Name=""SourceThreadId"">1008</Data>
+    <Data Name=""SourceImage"">C:\Windows\system32\rundll32.exe</Data>
+    <Data Name=""TargetProcessGUID"">{BEDB1A18-644A-62ED-0000-00102B980000}</Data>
+    <Data Name=""TargetProcessId"">516</Data>
+    <Data Name=""TargetImage"">C:\Windows\system32\lsass.exe</Data>
+    <Data Name=""GrantedAccess"">0x00001010</Data>
+    <Data Name=""CallTrace"">C:\Windows\SYSTEM32\ntdll.dll+5157a|C:\Windows\system32\KERNELBASE.dll+d817|UNKNOWN(000000000038D97C)</Data>
+  </EventData>
+</Event>
+",10,2004,C:\Windows\system32\rundll32.exe,C:\Windows\system32\lsass.exe
