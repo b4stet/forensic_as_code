@@ -2,11 +2,13 @@
 ## Content
 
 - case 1: forensic analysis of a single Windows disk
+    - analysis: [notebook](case_1_writeup.ipynb)
     - resulting timeline, with raw events and comments: [timeline](./case_1/timeline.csv)
     - some visualizations built:  
     <img src="./case_1/initial_access.png" alt="initial access" width="200"/>
     <img src="./case_1/c2_data_volume.png" alt="c2 traffic" width="300"/>
 - case 2: forensic analysis of multiple disks, from Velociraptor data collections
+    - analysis: [notebook](case_2_writeup.ipynb)
     - resulting timeline, with raw events and comments: [timeline](./case_2/timeline.csv)
     - some visualizations built:  
     <img src="./case_2/timeline_tactic.png" alt="timeline" width="210"/>
@@ -56,7 +58,7 @@ Indeed all the disk artifacts comes with their own heterogeneous structure: ther
 Hence, a limited number of fields are loaded in the notebooks. 
 When an event is worth it, we can still refer to the full json to obtain the details. 
 
-The extraction, parsing and transformation steps was done with the following tools:
+The extraction, parsing and transformation steps were obtained with the following tools:
 - The Sleuth Kit for the MFT, which produces a csv file (https://www.sleuthkit.org/sleuthkit/)
 - Log2timeline, which produces a nested ndjson (https://github.com/log2timeline/plaso)
 - py_fair, my own script to assemble all the outputs in a unified time series (https://github.com/b4stet/py_fair).
