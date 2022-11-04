@@ -2,8 +2,16 @@
 ## Content
 
 - case 1: forensic analysis of a single Windows disk
-- case 2: forensic analysis of multiple disks, from Velociraptor data collections (coming soon)
-- case 3: Markov chain for the triage of noisy events (should work ... coming almost soon)
+    - resulting timeline, with raw events and comments: [timeline](./case_1/timeline.csv)
+    - some visualizations built:  
+    <img src="./case_1/initial_access.png" alt="initial access" width="200"/>
+    <img src="./case_1/c2_data_volume.png" alt="c2 traffic" width="300"/>
+- case 2: forensic analysis of multiple disks, from Velociraptor data collections
+    - resulting timeline, with raw events and comments: [timeline](./case_2/timeline.csv)
+    - some visualizations built:  
+    <img src="./case_2/timeline_tactic.png" alt="timeline" width="210"/>
+    <img src="./case_2/post_compromise.png" alt="post-compromise" width="100"/>
+- case 3: Markov chain for the triage of noisy events (should work ... coming later)
 - case 4: analyzing pattern, uncover anomalies in network logs (trend, seasonnality) (coming later)
 
 ## Why
